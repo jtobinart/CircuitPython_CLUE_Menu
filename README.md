@@ -11,7 +11,7 @@ Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) inst
 Download this repository and copy _main.py_ and _menu.py_ over to your drive CIRCUITPY. 
 
 ## On Startup
-The scripts will automatically run at startup. You don't need to do anything else after installation.
+This program will automatically run at startup. You don't need to do anything else after installation.
 
 If you wish to disable the menu and run another file at startup, I suggest modifying _main.py_. _Main.py_ is a simple redirect script and is a lot easier than constantly renaming files.
 
@@ -27,7 +27,7 @@ import hello_world
 It is that easy. I only change __Main.py__ when I am debugging a new program.
 
 ## Usage
-This menu program has two display modes: small text and large text mode. The program will automatically start in large test mode. During boot up of the menu program you will be given a chance to press the A button to switch to small text mode.
+This menu program has two display modes: small and large text modes. The program will automatically start in large text mode. During boot up of the menu program you will be given a chance to press the A button to switch to small text mode.
 
 Once the menu opens you can press:
 Button | Action
