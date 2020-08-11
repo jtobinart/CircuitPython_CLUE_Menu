@@ -128,7 +128,7 @@ while True:
     for i in range(0, maxLineLen, 1):
         clue_data[i].text = "{} {}".format(indicator[j], menu_options[j])               # Set text lines
         j += 1
-    clue_data[maxLineLen].text = "Item {} of {}".format((selected + 1), max_length)     # Set location text
+    clue_data[maxLineLen].text = "File {} of {}".format((selected + 1), max_length)     # Set location text
     clue_data.show()                                                                    # Show text on display
 
     # Check for button press events
