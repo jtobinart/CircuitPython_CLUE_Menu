@@ -1,5 +1,5 @@
 # CircuitPython_CLUE_Menu
-Make your AAdafruit [CLUE](https://www.adafruit.com/product/4500) multifunctional by adding a nifty startup menu to select the program you want to run. You no longer need to retitle you files to main.py
+Make your Adafruit [CLUE](https://www.adafruit.com/product/4500) multifunctional by adding a nifty startup menu to select the program you want to run. You no longer need to retitle you files to main.py
 
 ## Dependencies
 This library depends on:
@@ -11,12 +11,11 @@ Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) inst
 Download this repository and copy _main.py_ and _menu.py_ over to your drive CIRCUITPY. 
 
 ## Usage
-You can create a new main.py file and use:
+The scripts will automatically run at startup. You don't need to do anything else after installation.
+If you wish to disable the menu and run another file at start up I suggest modifying main.py. Main.py is a simple redirect script and is a lot easier than constantly renaming files.
 ```python
-import cutebot
-from cutebot import clue
+
 ```
-to access the CLUE and Cutebot or you can use one of the examples programs provided in the repository. Use the IR remote example to easily learn about IR signals and control your Cutebot in a snap. Download Adafruit's BlueFruit Connect app and control your Cutbot over Bluetooth. These examples and more are located in the _examples_ folder.
 
 ## License
 The code of the repository is made available under the terms of the MIT license. See license.md for more information.
