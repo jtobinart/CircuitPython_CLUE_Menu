@@ -1,5 +1,5 @@
 # CircuitPython_CLUE_Menu
-Make your Adafruit [CLUE](https://www.adafruit.com/product/4500) multi-functional by adding a nifty startup menu to select the program you want to run. You no longer need to rename you files to main.py
+Make your Adafruit [CLUE](https://www.adafruit.com/product/4500) multi-functional by adding a nifty startup menu to select the program you want to run. You no longer need to rename you files to code.py, code.txt, main.py, or main.txt to run them.
 
 ## Dependencies
 This library depends on:
