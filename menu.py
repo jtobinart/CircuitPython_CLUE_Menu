@@ -151,6 +151,6 @@ while True:
         time.sleep(0.1)                                 # Give user some time to let go
     elif clue.button_b:
         countdown(2)                                    # Start countdown
-        clue_data.show_terminal()                       
+        clue_data.show_terminal()                       # Show terminal
         exec(open(menu_options[selected]).read())       # Run selected program
-        time.sleep(1)
+        time.sleep(1)                                   # Give the user time to read terminal one last time
