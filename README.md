@@ -8,7 +8,7 @@ This library depends on:
 
 ## Instalations
 Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the __Adafruit_CircuitPython_CLUE__.
-Download this repository and copy _main.py_ and _menu.py_ over to your drive CIRCUITPY. 
+Download this repository and copy _main.py_ and _menu.mpy_ over to your drive CIRCUITPY. The .mpy are precompiled files that use about a third less storage space. If you are having memmory allocation issues and don't want to use _menu.mpy_, try _menu_lite.py_.
 
 ## On Startup
 This program will automatically run at startup. You don't need to do anything else after installation.
