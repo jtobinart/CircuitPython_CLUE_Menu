@@ -7,7 +7,7 @@ This library depends on:
 * [Adafruit_CircuitPython_CLUE](https://github.com/adafruit/Adafruit_CircuitPython_CLUE)
 
 ## Instalations
-Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the __Adafruit_CLUE__.
+Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the _Adafruit_CircuitPython_CLUE_.
 
 Download this repository and copy _main.py_ and at least one of the following files over to your CIRCUITPY drive.
 file | description
@@ -18,7 +18,7 @@ menu_lite.py | Editable Python file and less than half the size of _menu.py_
 menu_cubot.mpy |Precompiled Python file for use with [CLUE-Cutebot-CircuitPython](https://github.com/jisforjt/CLUE-Cutebot-CircuitPython) repository
 
 ## On Startup
-If you are not using _menu.py_ or _menu.mpy_ then you will need to edit _main.py_. _Main.py_ is a simple redirect script and is a lot easier than constantly renaming files. Open _main.py_ and you will see:
+If you are not using _menu.py_ or _menu.mpy_ then you will need to edit _main.py_. _main.py_ is a simple redirect script and it is a lot easier than constantly renaming files. Open _main.py_ and you will see:
 ```python
 #Uncomment the version you are using and comment out the rest.
 import menu
