@@ -7,24 +7,39 @@ This library depends on:
 * [Adafruit_CircuitPython_CLUE](https://github.com/adafruit/Adafruit_CircuitPython_CLUE)
 
 ## Instalations
-Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the __Adafruit_CircuitPython_CLUE__.
-Download this repository and copy _main.py_ and _menu.mpy_ over to your drive CIRCUITPY. The .mpy are precompiled files that use about a third less storage space. If you are having memmory allocation issues and don't want to use _menu.mpy_, try _menu_lite.py_.
+Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the __Adafruit_CLUE__.
+
+Download this repository and copy _main.py_ and at least one of the following files over to your CIRCUITPY drive.
+file | description
+---- | ----
+menu.py | Original Python file and is highly detailed
+menu.mpy | Precompiled Python file and a third the size of _menu.py_
+menu_lite.py | Editable Python file and less than half the size of _menu.py_
+menu_cubot.mpy |Precompiled Python file for use with [CLUE-Cutebot-CircuitPython](https://github.com/jisforjt/CLUE-Cutebot-CircuitPython) repository
 
 ## On Startup
-This program will automatically run at startup. You don't need to do anything else after installation.
-
-If you wish to disable the menu and run another file at startup, I suggest modifying _main.py_. _Main.py_ is a simple redirect script and is a lot easier than constantly renaming files.
-
-Save time by changing the imported file in __Main.py__. It is set up by default to run menu.py
+If you are not using _menu.py_ or _menu.mpy_ then you will need to edit _main.py_. _Main.py_ is a simple redirect script and is a lot easier than constantly renaming files. Open _main.py_ and you will see:
 ```python
+#Uncomment the version you are using and comment out the rest.
 import menu
+#import menu_lite
+#import menu_cutebot
+```
+If you are using menu_lite then change it to:
+```python
+#Uncomment the version you are using and comment out the rest.
+#import menu
+import menu_lite
+#import menu_cutebot
 ```
 If you wanted to run another program at startup, for example hello_world.txt, it would be:
 ```python
 #import menu
+#import menu_lite
+#import menu_cutebot
 import hello_world
 ```
-It is that easy. I only change __Main.py__ when I am debugging a new program.
+It is that easy. I only change __main.py__ when I am debugging a new program.
 
 ## Usage
 This menu program has two display modes: small and large text modes. The program will automatically start in large text mode. During boot up of the menu program you will be given a chance to press the A button to switch to small text mode.
