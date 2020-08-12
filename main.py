@@ -15,7 +15,7 @@ v1.0
 #   Import
 ######################################################
 
-#Uncomment the version you are using
+#Uncomment the version you are using and comment out the rest.
 import menu
 #import menu_lite
 #import menu_cutebot
