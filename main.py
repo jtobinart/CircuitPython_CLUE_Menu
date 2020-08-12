@@ -15,6 +15,9 @@ v1.0
 #   Import
 ######################################################
 
+#Uncomment the version you are using
 import menu
+#import menu_lite
+#import menu_cutebot
 
 print("END - main.py")

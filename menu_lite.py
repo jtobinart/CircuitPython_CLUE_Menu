@@ -38,8 +38,11 @@ v1.0
 
 import time
 import os
-import cutebot                                       
-from cutebot import clue                  
+
+from adafruit_clue import clue 
+#Cutebot users uncomment lines below and comment out line above
+#import cutebot                                       
+#from cutebot import clue                  
 
 arrow = '->'
 selected = 0

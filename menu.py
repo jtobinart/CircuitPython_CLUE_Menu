@@ -33,6 +33,11 @@ v1.0
     - Press and hold A and B to see terminal
     - Press A to select next file (loops at end)
     - Press B to run the selected file
+
+    Note:
+        - File names that start with '.', '_', and 'TRASH' are automatiically filtered out.
+        - These full file names are also filtered out: 
+            -'boot_out.txt', 'main.py', 'code.py', 'menu.py', 'main.txt', 'code.txt'
 '''
 
 
@@ -41,9 +46,10 @@ v1.0
 ######################################################
 import time
 import os                                       
-from adafruit_clue import clue                  
 
-#import cutebot                                 # if you were using this with the CLUE and Cutebot
+from adafruit_clue import clue                  
+#Cutebot users uncomment lines below and comment out line above
+#import cutebot
 #from cutebot import clue
 
 
@@ -53,7 +59,7 @@ from adafruit_clue import clue
 arrow = '->'                                    # Graphic for display
 selected = 0                                    # The index of the currently selected file
 move_count = 0                                  # The number of times we have moved
-hidden_ID = ['.', 'TRASH', 'boot_out']          # List of file name elements we do not want to see
+hidden_ID = ['.', '_', 'TRASH', 'boot_out.txt', 'main.py', 'code.py', 'menu.py', 'main.txt', 'code.txt']         # List of file name elements and names we do not want to see
 start_pos = 0                                   # Starting position for the simple_text_display list
 
 
