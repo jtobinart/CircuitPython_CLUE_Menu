@@ -1,6 +1,6 @@
 
 # CircuitPython_CLUE_Menu
-[![Alt text](https://img.youtube.com/vi/ZTE-hqM6GPo/0.jpg)](https://https://youtu.be/ZTE-hqM6GPo)
+[![CircuitPython_CLUE_Menu YouTube Video](https://github.com/jisforjt/CircuitPython_CLUE_Menu/blob/master/docs/images/youtubestill.png)](https://https://youtu.be/ZTE-hqM6GPo)
 
 Make your Adafruit [CLUE](https://www.adafruit.com/product/4500) multi-functional by adding a nifty startup menu to select the program you want to run. You no longer need to rename your files to code or main to run them. Simply drag and drop your files into your CIRCUITPY drive and this menu program does the rest.
 
