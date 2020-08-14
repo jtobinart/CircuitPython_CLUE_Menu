@@ -20,7 +20,7 @@ menu.mpy | Precompiled Python file and a third the size of _menu.py_
 menu_lite.py | Editable Python file and less than half the size of _menu.py_
 menu_cubot.mpy |Precompiled Python file for use with [CircuitPython_CLUE_Cutebot](https://github.com/jisforjt/CircuitPython_CLUE_Cutebot) repository
 
-## On Startup
+## Configuration
 If you are not using _menu.py_ or _menu.mpy_ then you will need to edit _main.py_. _main.py_ is a simple redirect script and it is a lot easier than constantly renaming files. Open _main.py_ and you will see:
 ```python
 #Uncomment the version you are using and comment out the rest.
