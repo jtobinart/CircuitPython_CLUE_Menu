@@ -7,10 +7,10 @@ Make your Adafruit [CLUE](https://www.adafruit.com/product/4500) multi-functiona
 ## Dependencies
 This library depends on:
 * [Adafruit CircuitPython](https://github.com/adafruit/circuitpython)
-* [Adafruit_CircuitPython_CLUE](https://github.com/adafruit/Adafruit_CircuitPython_CLUE)
+* [Adafruit_CircuitPython_CLUE](https://github.com/adafruit/Adafruit_CircuitPython_CLUE) or [CircuitPython_CLUE_Cutebot](https://github.com/jisforjt/CircuitPython_CLUE_Cutebot)
 
 ## Instalations
-Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the _Adafruit_CircuitPython_CLUE_.
+Follow Adafruit's [CLUE Overview](https://learn.adafruit.com/adafruit-clue) instructions under _CircuitPython on CLUE_. During the installation process, you will download the latest _library bundle_ and transfer several libraries to the CLUE, including the _Adafruit_CircuitPython_CLUE_. If you are using this with the Elecfreaks Cutebot then follow the installation directions provided in the [CircuitPython_CLUE_Cutebot](https://github.com/jisforjt/CircuitPython_CLUE_Cutebot) repository.
 
 Download this repository and copy _main.py_ and at least one of the following files over to your CIRCUITPY drive.
 file | description
