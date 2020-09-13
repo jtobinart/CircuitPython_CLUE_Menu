@@ -41,8 +41,7 @@ import os
 
 from adafruit_clue import clue 
 #Cutebot users uncomment lines below and comment out line above
-#import cutebot                                       
-#from cutebot import clue                  
+#from jisforjt_cutebot_clue import cutebot, clue                  
 
 arrow = '->'
 selected = 0
