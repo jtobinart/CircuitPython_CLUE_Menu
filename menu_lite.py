@@ -50,6 +50,7 @@ hidden_ID = ['.', '_', 'TRASH', 'boot_out.txt', 'main.py', 'code.py', 'menu.py',
 start_pos = 0
 
 def file_filter(data):
+    #filter out non python files
     for y in hidden_ID:
         filtered_data = [x for x in data if not x.startswith(y)]
         data = filtered_data
@@ -57,37 +58,37 @@ def file_filter(data):
     return sorted(filtered_data)
 
 print("\nPRESS AND HOLD A BUTTON TO ENTER SMALL TEXT MODE\n.")
-time.sleep(2)
-if clue.button_a:
+time.sleep(2) #wait so user has time to press button
+if clue.button_a: #check if button is pressed
     small_text_mode = True
     print('Starting small text mode.')
 else:
     small_text_mode = False
     print('NO PRESS DETECTED.\nStarting large text mode.')
-menu_options = file_filter(os.listdir())
+menu_options = file_filter(os.listdir()) #puts file names into a list
 max_length = len(menu_options)
 if small_text_mode == True:
-    clue_data = clue.simple_text_display(title="Menu", title_scale=2, text_scale=1)
+    clue_data = clue.simple_text_display(title="Menu", title_scale=2, text_scale=1) #creates view of file names with title
     maxLineLen = min(max_length, 15)
 else:
-    clue_data = clue.simple_text_display(title="Menu", title_scale=3, text_scale=2)
+    clue_data = clue.simple_text_display(title="Menu", title_scale=3, text_scale=2) #creates view of file names with title
     maxLineLen = min(max_length, 6)
 
 while True:
-    indicator = ['  '] * max_length
-    indicator[selected] = arrow
+    indicator = ['  '] * max_length #puts empty space before menu item
+    indicator[selected] = arrow #puts arrow before selected item replacing spaces
     j = start_pos
     for i in range(0, maxLineLen, 1):
-        clue_data[i].text = "{} {}".format(indicator[j], menu_options[j])
+        clue_data[i].text = "{} {}".format(indicator[j], menu_options[j]) #replaces '{}' with the items in parenthasis
         j += 1
-    clue_data[maxLineLen].text = "File {} of {}".format((selected + 1), max_length)
-    clue_data.show()
-    if clue.button_a and clue.button_b:
-        clue_data.show_terminal()
+    clue_data[maxLineLen].text = "File {} of {}".format((selected + 1), max_length) #replaces '{}' with the items in parenthasis 
+    clue_data.show() #sends graphics data to tft
+    if clue.button_a and clue.button_b: #checks for button presses
+        clue_data.show_terminal() #shows the terminal
         time.sleep(0.1)
-    elif clue.button_a:
+    elif clue.button_a: #checks for button presses
         move_count += 1
-        selected = move_count % max_length
+        selected = move_count % max_length #divides move count by max length but returns the remainder (Example: 12 % 5 = 2)
         if selected > (start_pos + maxLineLen - 1):
             start_pos += 1
         elif selected < start_pos:
