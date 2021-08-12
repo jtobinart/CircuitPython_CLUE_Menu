@@ -34,6 +34,7 @@ v1.0
         - File names that start with '.', '_', and 'TRASH' are automatiically filtered out.
         - These full file names are also filtered out: 
             -'boot_out.txt', 'main.py', 'code.py', 'menu.py', 'main.txt', 'code.txt'
+        - Use the full version, menu.py, to find detailed comments.
 '''
 
 import time
